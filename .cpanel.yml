@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/valtopon/public_html/
+    - /bin/cp index.html style.css script.js analytics.js analytics-config.js favicon.ico $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
